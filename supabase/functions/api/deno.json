@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "@mastra/core/mastra": "npm:@mastra/core/mastra",
+    "@mastra/core/workflows": "npm:@mastra/core/workflows",
+    "@mastra/server/handlers/workflows": "npm:@mastra/server/handlers/workflows",
+    "@mastra/pg": "npm:@mastra/pg",
+    "zod": "npm:zod"
+  }
+}
