@@ -45,6 +45,7 @@ app.post("workflows/:id/create-run", async (c) => {
       })
     );
   } catch (error) {
+    console.log(error);
     return c.json({ error: "Failed to create run" }, 500);
   }
 });
@@ -64,6 +65,7 @@ app.post("workflows/:id/start", async (c) => {
       })
     );
   } catch (error) {
+    console.log(error);
     return c.json({ error: "Failed to start run" }, 500);
   }
 });

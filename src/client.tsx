@@ -5,11 +5,15 @@ import { MastraClientProvider, WorkflowGraph, WorkflowRunProvider, WorkflowTrigg
 
 
 const clientOptions = {
-  baseUrl: 'http://127.0.0.1:54321/functions/v1/',
+  // baseUrl: 'http://127.0.0.1:54321/functions/v1/',
+  // baseUrl: 'http://localhost:4111',
+  baseUrl: `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/`,
   headers: {
     'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
   },
 }
+
+console.log(clientOptions)
 const client = new MastraClient(clientOptions);
 
 function App() {
