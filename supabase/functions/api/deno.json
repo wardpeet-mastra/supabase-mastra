@@ -1,9 +1,9 @@
 {
   "imports": {
-    "@mastra/core/mastra": "npm:@mastra/core/mastra",
-    "@mastra/core/workflows": "npm:@mastra/core/workflows",
-    "@mastra/server/handlers/workflows": "npm:@mastra/server/handlers/workflows",
-    "@mastra/pg": "npm:@mastra/pg",
+    "@mastra/core/mastra": "npm:@mastra/core@0.0.0-workflow-deno-20250616132510/mastra",
+    "@mastra/core/workflows": "npm:@mastra/core@0.0.0-workflow-deno-20250616132510/workflows",
+    "@mastra/server/handlers/workflows": "npm:@mastra/server@0.0.0-workflow-deno-20250616132510/handlers/workflows",
+    "@mastra/pg": "npm:@mastra/pg@0.0.0-workflow-deno-20250616132510",
     "zod": "npm:zod"
   }
 }

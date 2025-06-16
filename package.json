@@ -7,11 +7,11 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.12.2",
-    "@mastra/client-js": "workflow-deno",
-    "@mastra/core": "workflow-deno",
-    "@mastra/pg": "workflow-deno",
-    "@mastra/playground-ui": "workflow-deno",
-    "@mastra/server": "workflow-deno",
+    "@mastra/client-js": "0.0.0-workflow-deno-20250616132510",
+    "@mastra/core": "0.0.0-workflow-deno-20250616132510",
+    "@mastra/pg": "0.0.0-workflow-deno-20250616132510",
+    "@mastra/playground-ui": "0.0.0-workflow-deno-20250616132510",
+    "@mastra/server": "0.0.0-workflow-deno-20250616132510",
     "@supabase/ssr": "^0.5.2",
     "@supabase/supabase-js": "^2.47.10",
     "@vitejs/plugin-react": "^4.5.2",
@@ -24,7 +24,7 @@
     "zod": "^3.25.64"
   },
   "devDependencies": {
-    "mastra": "workflow-deno",
+    "mastra": "0.0.0-workflow-deno-20250616132510",
     "@hono/vite-build": "^1.1.0",
     "@hono/vite-dev-server": "^0.17.0",
     "@types/node": "^20.11.17",
