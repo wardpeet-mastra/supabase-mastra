@@ -81,6 +81,8 @@ pnpm install
 cp .env.example .env
 ```
 
+Copy your envs from running `pnpm dlx supabase start`
+
 3. Start the development environment:
 
 ```bash
