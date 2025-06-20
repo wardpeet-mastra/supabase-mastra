@@ -7,6 +7,7 @@ import {
   getWorkflowRunsHandler,
   createWorkflowRunHandler,
   startWorkflowRunHandler,
+  getWorkflowsHandler,
 } from "@mastra/server/handlers/workflows";
 import { mastra } from "./src/mastra/index.ts";
 import { WorkflowRunState } from "@mastra/core/workflows";
@@ -19,6 +20,15 @@ app.use(
     origin: "http://localhost:5173",
   })
 );
+app.get("workflows", async (c) => {
+  const id = c.req.param("id");
+  return c.json(
+    await getWorkflowsHandler({
+      mastra,
+      workflowId: id,
+    })
+  );
+});
 app.get("workflows/:id", async (c) => {
   const id = c.req.param("id");
   return c.json(
